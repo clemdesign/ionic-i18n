@@ -1,0 +1,28 @@
+{
+  "choice": {
+    "title": "Choix de la langue"
+  },
+  "menu": {
+    "choice" : "Langue",
+    "yellow": "Fruits jaunes",
+    "red": "Fruits rouges"
+  },
+  "yellow": {
+    "title": "Fruits jaunes",
+    "desc": "Les fruits jaunes :",
+    "items": {
+      "lemon": "Citron",
+      "banana": "Banane",
+      "apricot": "Abricot"
+    }
+  },
+  "red": {
+    "title": "Fruits rouges",
+    "desc": "Les fruits rouges :",
+    "items": {
+      "strawberry": "Fraise",
+      "blueberry": "Myrtille",
+      "cherry": "Cerise"
+    }
+  }
+}

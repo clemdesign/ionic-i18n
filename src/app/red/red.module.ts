@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RedPageRoutingModule } from './red-routing.module';
 
 import { RedPage } from './red.page';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RedPageRoutingModule
+    RedPageRoutingModule,
+    TranslateModule
   ],
   declarations: [RedPage]
 })

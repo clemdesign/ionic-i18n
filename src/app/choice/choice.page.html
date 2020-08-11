@@ -1,9 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title i18n="Choice Title">Language choice</ion-title>
+    <ion-title>{{'choice.title'|translate}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <div class="ion-padding ion-text-center">
+    <ion-button (click)="changeLang('fr')">FR</ion-button>
+    <ion-button (click)="changeLang('en')">EN</ion-button>
+  </div>
 
 </ion-content>

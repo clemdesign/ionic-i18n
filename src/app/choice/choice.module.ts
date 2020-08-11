@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ChoicePageRoutingModule } from './choice-routing.module';
 
 import { ChoicePage } from './choice.page';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ChoicePageRoutingModule
+    ChoicePageRoutingModule,
+    TranslateModule.forChild()
   ],
   declarations: [ChoicePage]
 })

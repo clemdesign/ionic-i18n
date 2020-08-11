@@ -7,13 +7,15 @@ import {IonicModule} from '@ionic/angular';
 import {YellowPageRoutingModule} from './yellow-routing.module';
 
 import {YellowPage} from './yellow.page';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    YellowPageRoutingModule
+    YellowPageRoutingModule,
+    TranslateModule.forChild()
   ],
   declarations: [YellowPage],
   providers: [
