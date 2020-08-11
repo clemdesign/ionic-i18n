@@ -6,10 +6,16 @@
   "projects": {
     "app": {
       "root": "",
-      "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
+      "sourceRoot": "src",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -19,6 +25,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": ["en", "fr"],
             "assets": [
               {
                 "glob": "**/*",
@@ -68,6 +75,9 @@
             },
             "ci": {
               "progress": false
+            },
+            "fr": {
+              "localize": ["fr"]
             }
           }
         },
@@ -82,6 +92,9 @@
             },
             "ci": {
               "progress": false
+            },
+            "fr": {
+              "browserTarget": "app:build:fr"
             }
           }
         },
