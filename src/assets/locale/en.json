@@ -1,7 +1,8 @@
 {
   "choice": {
     "title": "Language choice",
-    "today_is": "Today is"
+    "today_is": "Today is",
+    "win": "I would like to win {{sum}} to Lottery! Or {{percent}} :)"
   },
   "menu": {
     "choice": "Language",
