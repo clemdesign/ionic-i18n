@@ -7,7 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { ChoicePageRoutingModule } from './choice-routing.module';
 
 import { ChoicePage } from './choice.page';
-import {TranslateModule} from '@ngx-translate/core';
+import {TranslocoModule} from '@ngneat/transloco';
+import {TranslocoLocaleModule} from '@ngneat/transloco-locale';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import {TranslateModule} from '@ngx-translate/core';
     FormsModule,
     IonicModule,
     ChoicePageRoutingModule,
-    TranslateModule.forChild()
+    TranslocoModule,
+    TranslocoLocaleModule
   ],
   declarations: [ChoicePage]
 })

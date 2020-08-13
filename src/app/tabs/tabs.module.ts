@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
-import {TranslateModule} from '@ngx-translate/core';
+import {TranslocoModule} from '@ngneat/transloco';
 
 @NgModule({
   imports: [
@@ -14,7 +14,7 @@ import {TranslateModule} from '@ngx-translate/core';
     CommonModule,
     FormsModule,
     TabsPageRoutingModule,
-    TranslateModule.forChild()
+    TranslocoModule
   ],
   declarations: [TabsPage]
 })

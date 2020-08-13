@@ -7,7 +7,7 @@ import {IonicModule} from '@ionic/angular';
 import {YellowPageRoutingModule} from './yellow-routing.module';
 
 import {YellowPage} from './yellow.page';
-import {TranslateModule} from '@ngx-translate/core';
+import {TranslocoModule} from '@ngneat/transloco';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import {TranslateModule} from '@ngx-translate/core';
     FormsModule,
     IonicModule,
     YellowPageRoutingModule,
-    TranslateModule.forChild()
+    TranslocoModule
   ],
   declarations: [YellowPage],
   providers: [

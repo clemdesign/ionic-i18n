@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+import {TranslocoService} from '@ngneat/transloco';
 
 @Component({
   selector: 'app-choice',
@@ -11,7 +11,7 @@ export class ChoicePage implements OnInit {
 
   date: Date;
 
-  constructor(private translateServ: TranslateService, private cdr: ChangeDetectorRef) {
+  constructor(private translateServ: TranslocoService, private cdr: ChangeDetectorRef) {
     this.date = new Date();
   }
 
@@ -20,9 +20,8 @@ export class ChoicePage implements OnInit {
   }
 
   changeLang(lang) {
-    this.translateServ.use(lang).subscribe(() => {
-      this.cdr.detectChanges();
-    });
+    this.translateServ.setActiveLang(lang);
+    this.cdr.detectChanges();
   }
 
 }

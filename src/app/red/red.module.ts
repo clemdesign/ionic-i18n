@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { RedPageRoutingModule } from './red-routing.module';
 
 import { RedPage } from './red.page';
-import {TranslateModule} from '@ngx-translate/core';
+import {TranslocoModule} from '@ngneat/transloco';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import {TranslateModule} from '@ngx-translate/core';
     FormsModule,
     IonicModule,
     RedPageRoutingModule,
-    TranslateModule
+    TranslocoModule
   ],
   declarations: [RedPage]
 })
