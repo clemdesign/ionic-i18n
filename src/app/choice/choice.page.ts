@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChoicePage implements OnInit {
 
-  constructor() { }
+  date: Date;
+
+  constructor() {
+    this.date = new Date();
+  }
 
   ngOnInit() {
   }

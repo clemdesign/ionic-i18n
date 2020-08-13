@@ -11,7 +11,7 @@
       "schematics": {},
       "sourceRoot": "src",
       "i18n": {
-        "sourceLocale": "en",
+        "sourceLocale": "en-US",
         "locales": {
           "fr": "src/locale/messages.fr.xlf"
         }
@@ -25,7 +25,8 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "localize": ["en", "fr"],
+            "localize": true,
+            "aot": true,
             "assets": [
               {
                 "glob": "**/*",

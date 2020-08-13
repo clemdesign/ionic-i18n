@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="fr">
     <body>
       <trans-unit id="29de3c457541c851354dacec5eb958eea1de04f0" datatype="html">
         <source>Language choice</source>
@@ -27,6 +27,14 @@
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">Red Fruits Title</note>
+      </trans-unit>
+      <trans-unit id="choice.today_is" datatype="html">
+        <source>Today is</source>
+        <target>Aujourd'hui, on est le</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/choice/choice.page.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="5f7e4ad724e1518305d8b1d4eae1e9f2a20bca41" datatype="html">
         <source>Yellow fruits</source>
