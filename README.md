@@ -13,6 +13,8 @@ The project is organized in several branch:
 - `ngx-translate` for **Ngx-Translate library**
 - `transloco` for **Transloco library**
 
+Translation used are: *en, fr*
+
 ## Installation
 
 Clone this project on your machine.
@@ -26,6 +28,8 @@ Using **Git**, execute the folowing commands:
 ```
 git checkout ng-i18n
 npm i
+npm run servefr     // for FR translation
+ionic serve --configuration=en // for EN translation
 ```
 
 ### Ngx-Translate
@@ -35,6 +39,7 @@ Using **Git**, execute the folowing commands:
 ```
 git checkout ngx-translate
 npm i
+ionic serve
 ```
 
 ### Transloco
@@ -44,4 +49,5 @@ Using **Git**, execute the folowing commands:
 ```
 git checkout transloco
 npm i
+ionic serve
 ```
