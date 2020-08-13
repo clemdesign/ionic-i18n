@@ -1,6 +1,7 @@
 {
   "choice": {
-    "title": "Choix de la langue"
+    "title": "Choix de la langue",
+    "today_is": "Aujourd'hui, on est le"
   },
   "menu": {
     "choice" : "Langue",

@@ -9,7 +9,11 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class ChoicePage implements OnInit {
 
-  constructor(private translateServ: TranslateService, private cdr: ChangeDetectorRef) { }
+  date: Date;
+
+  constructor(private translateServ: TranslateService, private cdr: ChangeDetectorRef) {
+    this.date = new Date();
+  }
 
   ngOnInit() {
     this.cdr.detectChanges();
